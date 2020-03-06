@@ -4,7 +4,7 @@
 Created on 2020
 
 GradRAM
-simple function to run Regression Activation Map.
+Simple function to run Regression Activation Map.
 Adapted from GradCAM
 
 @author: stephen.law
@@ -44,9 +44,7 @@ def load_img(path):
     X2 = image.load_img(path, target_size=(128, 128))
     X2 = image.img_to_array(X2)
     X2 = np.expand_dims(X2, axis=0)
-    #X2 = X2-np.array([103.939, 116.779, 123.68])
     X2 = preprocess_input(X2, mode='tf')
-    #X2 = preprocess_input(X2)
     img = np.array([i for i in X2])
     return img
 
