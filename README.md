@@ -1,2 +1,2 @@
 # UrbanGradRAM
-Adapting the gradient activation mapping method for a regression task in an urban context.
+A simple function that adapts from the gradient activation mapping method (GradCAM) for a regression task used in an urban context. 
